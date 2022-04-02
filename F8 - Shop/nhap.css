@@ -1,0 +1,23 @@
+.html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    background-color: orange;
+    height: 100px;
+    display: flex;
+}
+h1 {
+    margin: auto;
+    position: relative;
+}
+h1::after {
+    position: absolute;
+    left: -10px;
+    content: "";
+    border-left: 3px solid  #333;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
